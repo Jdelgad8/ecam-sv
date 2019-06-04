@@ -1,0 +1,45 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const eduacionSchema = new Schema({
+  id_encuesta: String,
+  graduados_eduacion: Number,
+  graduados_primaria: Number,
+  graduados_secundaria: Number,
+  graduados_tecnologia: Number,
+  graduados_profesional: Number,
+  graduados_especializacion: Number,
+  graduados_doctorado: Number,
+  curso_eduacion: Number,
+  curso_primaria: Number,
+  curso_secundaria: Number,
+  curso_tecnologia: Number,
+  curso_profesional: Number,
+  curso_especializacion: Number,
+  curso_doctorado: Number,
+  requerimiento_eduacion: Number,
+  requerimiento_primaria: Number,
+  requerimiento_secundaria: Number,
+  requerimiento_tecnologia: Number,
+  requerimiento_profesional: Number,
+  requerimiento_especializacion: Number,
+  requerimiento_doctorado: Number,
+  centros_escuela: Number,
+  centros_colegio: Number,
+  centros_instituto: Number,
+  centros_universidad: Number,
+  programas_escuela: Number,
+  programas_colegio: Number,
+  programas_instituto: Number,
+  programas_universidad: Number,
+  salones_escuela: Number,
+  salones_colegio: Number,
+  salones_instituto: Number,
+  salones_universidad: Number,
+  estudiantes_escuela: Number,
+  estudiantes_colegio: Number,
+  estudiantes_instituto: Number,
+  estudiantes_universidad: Number
+});
+
+module.exports = mongoose.model('Educacion', eduacionSchema);
